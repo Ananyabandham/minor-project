@@ -2,7 +2,7 @@ from transformers import AutoModelForSeq2SeqLM, AutoTokenizer
 
 class CaptionGenerator:
     def __init__(self):
-        self.model = AutoModelForSequenceToSequenceLM.from_pretrained('t5-base')
+        self.model = AutoModelForSeq2SeqLM.from_pretrained('t5-base')
         self.tokenizer = AutoTokenizer.from_pretrained('t5-base')
 
     def generate_caption(self, image_id, genre, additional_info=None):
