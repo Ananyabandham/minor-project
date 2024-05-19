@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Image Caption Generator</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Image Caption Generator</h1>
+    <form action="" method="post">
+        <label for="image_url">Image URL:</label>
+        <input type="text" id="image_url" name="image_url"><br><br>
+        <label for="genre">Genre:</label>
+        <select id="genre" name="genre">
+            <option value="humorous">Humorous</option>
+            <option value="descriptive">Descriptive</option>
+            <option value="narrative">Narrative</option>
+        </select><br><br>
+        <label for="additional_info">Additional Information (optional):</label>
+        <input type="text" id="additional_info" name="additional_info"><br><br>
+        <input type="submit" value="Generate Caption">
+    </form>
+</body>
+</html>

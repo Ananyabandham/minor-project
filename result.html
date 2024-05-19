@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Image Caption Generator</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Image Caption Generator</h1>
+    <h2>Caption:</h2>
+    <p>{{ caption }}</p>
+    <img src="{{ image_url }}" alt="Image">
+</body>
+</html>
